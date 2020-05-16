@@ -124,4 +124,6 @@ fabric.properties
 
 
 # Project exclude paths
-/.gradle/
+.gradle/
+build/
+.idea/
