@@ -1,4 +1,4 @@
-package com.hoyoung.study.leetcod_0008_string_to_integer_atoi
+package com.hoyoung.study.leetcode_0008_string_to_integer_atoi
 
 class Solution {
     fun myAtoi(str: String): Int {
