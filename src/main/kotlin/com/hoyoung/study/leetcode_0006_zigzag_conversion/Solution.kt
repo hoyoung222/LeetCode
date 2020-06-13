@@ -15,19 +15,19 @@ class Solution {
         }
 
         val numCols = getNumCols(s.length, numRows)
-        var result = ""
+        var result = StringBuilder()
         for (row in 0 until numRows) {
             val max = (numCols - 1) * 2 + row
 
             var nextIdx = row
             while (nextIdx <= max) {
                 if (nextIdx < s.length) {
-                    result += s[nextIdx]
+                    result.append(s[nextIdx])
 
                     if (row in 1 until numRows - 1) {
                         val betweenIdx = nextIdx + ((numRows - 1 - row) * 2)
                         if (betweenIdx < s.length) {
-                            result += s[betweenIdx]
+                            result.append(s[betweenIdx])
                         }
                     }
                 }
@@ -36,6 +36,6 @@ class Solution {
             }
         }
 
-        return result
+        return result.toString()
     }
 }
